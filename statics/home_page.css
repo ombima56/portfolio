@@ -228,7 +228,7 @@ nav {
   margin-top: 2rem;
 }
 
-img[src*="PostgreSQL_logo.3colors.svg"] {
+img[src*="icons8-postgresql-48.png"] {
   width: 30px; /* Ensure PostgreSQL logo is same as others */
   height: auto;
 }

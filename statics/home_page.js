@@ -75,3 +75,18 @@ document.addEventListener("DOMContentLoaded", function() {
   animateText(); // Start the animation on page load
 });
 
+// Skill scrolling section with hover pause functionality
+document.addEventListener('DOMContentLoaded', function () {
+  const skillList = document.querySelector('.skill-list');
+
+  // Function to pause animation
+  skillList.addEventListener('mouseenter', function () {
+    skillList.style.animationPlayState = 'paused';
+  });
+
+  // Function to resume animation
+  skillList.addEventListener('mouseleave', function () {
+    skillList.style.animationPlayState = 'running';
+  });
+});
+

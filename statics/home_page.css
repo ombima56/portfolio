@@ -33,6 +33,16 @@ nav {
   font-size: 1.5rem;
   font-weight: bold;
   color: #4caf50;
+  transition: colar 0.3s ease;
+}
+
+.logo a {
+  color: inherit; /* Inherit the color from .logo */
+  text-decoration: none; /* Remove underline */
+}
+
+.logo a:hover {
+  color: white; /* Change color on hover */
 }
 
 .nav-links {
@@ -92,6 +102,21 @@ nav {
   border-right: 2px solid black; /* Simulate typing cursor */
   display: inline-block;
   margin-bottom: 20px;
+  animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+  /* Adjust the duration and steps based on text length */
+  height: 1.5em; /* Fixed height to prevent resizing */
+}
+
+/* Keyframes for typing effect */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Blinking cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
 }
 
 .hero h1 {
@@ -229,27 +254,27 @@ nav {
 }
 
 img[src*="icons8-postgresql-48.png"] {
-  width: 30px; /* Ensure PostgreSQL logo is same as others */
+  width: 30px;
   height: auto;
 }
 
 img[src*="icons8-python-48.png"] {
-  width: 30px; /* Ensure PostgreSQL logo is same as others */
+  width: 30px; 
   height: auto;
 }
 
 img[src*="icons8-css-48.png"] {
-  width: 30px; /* Ensure PostgreSQL logo is same as others */
+  width: 30px; 
   height: auto;
 }
 
 img[src*="icons8-html-48.png"] {
-  width: 30px; /* Ensure PostgreSQL logo is same as others */
+  width: 30px; 
   height: auto;
 }
 
 img[src*="icons8-javascript-48.png"] {
-  width: 30px; /* Ensure PostgreSQL logo is same as others */
+  width: 30px;
   height: auto;
 }
 
@@ -301,7 +326,6 @@ footer {
   padding: 5rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  /* background-color: #f9f9f9; */
 }
 
 .slide-in {
@@ -319,8 +343,8 @@ footer {
   padding: 0;
   list-style-type: none;
   display: inline-flex;
-  animation: scroll 25s linear infinite; /* Continuous scroll */
-  padding-left: 100%;
+  animation: scroll 30s linear infinite; /* Continuous scroll */
+  /* padding-left: 100%; */
 }
 
 .skill-list li {
